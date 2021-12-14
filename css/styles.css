@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #1f2937;
+  --secondary-color: #e5e7eb
+  --accent-color: #3882f6;
+
+  --primary-text-color: #f9faf8;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
