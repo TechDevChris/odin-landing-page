@@ -1,11 +1,34 @@
 :root {
   --primary-color: #1f2937;
-  --secondary-color: #e5e7eb
+  --secondary-color: #e5e7eb;
+
   --accent-color: #3882f6;
+  --accent-color-dark: #1263e6;
 
   --primary-text-color: #f9faf8;
 }
 
+/* global */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  padding: 0.4rem 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 7px;
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+a.btn:hover {
+  background-color: var(--accent-color-dark);
+}
+
+/* header */
 header {
   display: flex;
   justify-content: space-around;
@@ -13,15 +36,33 @@ header {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
   padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 6rem 0;
+}
+
+.hero-cta {
+  flex-basis: 36%;
+}
+
+.hero-header {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero-placeholder {
+  background-color: #6d747d;
+  padding: 5rem 6rem;
 }
